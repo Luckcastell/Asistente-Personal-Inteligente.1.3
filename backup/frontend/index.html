@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat con Suriel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="chat-container">
+    <h1 class="titulo">El Suriel, el conocedor</h1>
+    <div id="chat-box" class="chat-box"></div>
+    <div class="input-container">
+      <div class="sub-container">
+          <input class="input-mensaje" id="user-input" type="text" placeholder="Escribe tu mensaje...">
+          <button class="enviar-mensaje" onclick="sendMessage()">Enviar</button>
+      </div>
+      <div class="sub-container">
+          <input class="input-archivo" type="file" id="pdf-file" accept="application/pdf">
+          <button class="enviar-archivo"onclick="uploadPDF()">Subir PDF</button>
+          <div id="uploaded-info"></div>
+      </div>
+    </div>
+      
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

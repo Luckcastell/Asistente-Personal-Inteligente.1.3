@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Suriel (Base Privada)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="chat-container">
+    <h1>🤖 Suriel (Base Privada)</h1>
+
+    <input type="file" id="pdf-file" accept="application/pdf">
+    <button onclick="uploadPDF()">Subir PDF</button>
+    <p id="upload-status"></p>
+
+    <div id="chat-box" class="chat-box"></div>
+    <div class="input-container">
+      <input id="user-input" type="text" placeholder="Haz una pregunta sobre tus datos...">
+      <button onclick="sendMessage()">Enviar</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
